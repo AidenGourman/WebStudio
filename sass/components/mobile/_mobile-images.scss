@@ -1,0 +1,54 @@
+@media screen and (min-width: 150px) and (max-width: 767px){
+    .photo {
+        display: none;
+            padding-bottom: 94px;
+        }
+    
+        .photo__title {
+            margin-top: 0px;
+            margin-bottom: 50px;
+    
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.16;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: $primary-text-color;
+        }
+    
+        .images {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .images__item:not(:last-child) {
+            margin-right: 30px;
+        }
+    
+        .images__thumb {
+            position: relative;
+            width: 370px;
+            height: 294px;
+        }
+    
+        .image__container {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(47, 48, 58, 0.8);
+            width: 100%;
+            height: 70px;
+        }
+    
+        .images__text {
+            display: flex;
+            justify-content: center;
+            padding-top: 27px;
+            color: $primary-background-color;
+            margin: 0px;
+    
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 0.94;
+            letter-spacing: 0.03em;
+        }
+}

@@ -1,0 +1,45 @@
+@media screen and (min-width: 1200px) {
+    .specifications {
+            display: flex;
+        }
+    
+        .specifications__container {
+            display: inline-block;
+            width: 270px;
+            height: 120px;
+            border-radius: 4px;
+            background-color: #F5F4FA;
+            margin-bottom: 30px;
+    
+        }
+    
+        .specifications__icon {
+            padding: 25px 102px;
+        }
+    
+        .specifications__item:not(:last-child) {
+            margin-right: 30px;
+        }
+    
+        .specifications__title {
+            margin-top: 0px;
+            margin-bottom: 10px;
+    
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            color: $primary-text-color;
+        }
+    
+        .specifications__text {
+            margin-top: 0px;
+            margin-bottom: 0px;
+    
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: $secondary-text-color;
+        }
+}

@@ -1,0 +1,53 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .specifications {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .specifications__container {
+        width: 354px;
+        height: 120px;
+        border-radius: 4px;
+        background-color: #F5F4FA;
+        margin-bottom: 30px;
+    }
+
+    .specifications__icon {
+        padding: 25px 144px;
+    }
+
+    .specifications__item {
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 30px;
+    }
+
+    .specifications__item:nth-last-child(-n+2) {
+        margin-bottom: 0px;
+    }
+
+    .specifications__title {
+        display: flex;
+        margin-top: 0px;
+        margin-bottom: 10px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $primary-text-color;
+    }
+
+    .specifications__text {
+        width: 354px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $secondary-text-color;
+    }
+}

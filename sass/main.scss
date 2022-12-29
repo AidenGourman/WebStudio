@@ -1,0 +1,52 @@
+@import "./base/base";
+@import "./utils/variables";
+// HEADER 
+@import "./components/header/header";
+@import "./components/header/header-logo";
+@import "./components/header/header-nav";
+@import "./components/header/header-contact";
+// BACKGROUND
+@import "./components/background/background";
+@import "./components/background/modal";
+// SPECIFICATIONS
+@import "./components/specifications/specifications";
+// IMAGES
+@import "./components/image-set/images";
+// TEAM
+@import "./components/team/team";
+// CUSTOMERS
+@import "./components/customers/customers";
+// FOOTER
+@import "./components/footer/footer";
+// PORTFOLIO
+@import "./components/portfolio/buttons";
+@import "./components/portfolio/examples";
+
+// MOBILE VERSION
+@import "./components/mobile/mobile-header";
+@import "./components/mobile/mobile-header-nav";
+@import "./components/mobile/mobile-header-contacts";
+@import "./components/mobile/mobile-header-links";
+@import "./components/mobile/mobile-background";
+@import "./components/mobile/mobile-modal";
+@import "./components/mobile/mobile-specifications";
+@import "./components/mobile/mobile-images";
+@import "./components/mobile/mobile-team";
+@import "./components/mobile/mobile-customers";
+@import "./components/mobile/mobile-footer";
+@import "./components/mobile/mobile-porfolio-buttons";
+@import "./components/mobile/mobile-porfolio-examples";
+
+// TABLET VERSION
+@import "./components/tablet/tablet-header/tablet-header";
+@import "./components/tablet/tablet-header/tablet-header-nav";
+@import "./components/tablet/tablet-header/tablet-header-contacts";
+@import "./components/tablet/tablet-background";
+@import "./components/tablet/tablet-modal";
+@import "./components/tablet/tablet-specifications";
+@import "./components/tablet/tablet-images";
+@import "./components/tablet/tablet-team";
+@import "./components/tablet/tablet-customers";
+@import "./components/tablet/tablet-footer";
+@import "./components/tablet/tablet-buttons";
+@import "./components/tablet/tablet-examples"

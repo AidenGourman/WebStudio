@@ -1,0 +1,47 @@
+@media screen and (min-width: 150px) and (max-width: 767px){
+    .specifications {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .specifications__container {
+            width: 450px;
+            height: 120px;
+            border-radius: 4px;
+            background-color: #F5F4FA;
+            margin-bottom: 30px;
+        }
+    
+        .specifications__icon {
+            padding: 25px 192px;
+        }
+    
+        .specifications__item{
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+    
+        .specifications__title {
+            display: flex;
+            justify-content: center;
+            margin-top: 0px;
+            margin-bottom: 10px;
+    
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            color: $primary-text-color;
+        }
+    
+        .specifications__text {
+            margin-top: 0px;
+            margin-bottom: 30px;
+    
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: $secondary-text-color;
+        }
+}

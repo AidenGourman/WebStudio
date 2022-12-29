@@ -1,0 +1,62 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    // HEADER
+    .header {
+        background-color: $primary-background-color;
+        border-bottom: 1px solid #ECECEC;
+        min-height: 80px;
+        margin: auto;
+        width: 768px;
+        height: 80px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+
+
+        .hat-container {
+            display: flex;
+            align-items: center;
+            height: 80px;
+        }
+
+        .header__logo {
+            width: 134px;
+            margin-right: 88px;
+
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 15px;
+
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.19;
+            letter-spacing: 0.03em;
+            color: $primary-text-color;
+            text-decoration: none;
+        }
+
+        .header__accent {
+            color: #2196F3;
+        }
+   
+    }
+
+    .menu__button {
+        display: none;
+    }
+
+    .navigation__menu{
+        display: none;
+    }
+
+    .contacts__menu{
+        display: none;
+    }
+
+    .links{
+        display: none;
+    }
+
+}

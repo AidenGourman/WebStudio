@@ -1,0 +1,277 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+        opacity: 1;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        overflow-y: scroll;
+    }
+
+    .backdrop.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .backdrop.is-hidden .modal {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    .modal {
+        position: absolute;
+        max-width: 450px;
+        min-height: 609px;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%) scale(1);
+        background-color: #ffffff;
+
+        box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+        border-radius: 4px;
+    }
+
+    .modal__button {
+        position: absolute;
+        padding: 10;
+        width: 30px;
+        height: 30px;
+        top: 8px;
+        right: 8px;
+
+
+        display: block;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        cursor: pointer;
+        background-color: #ffffff;
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .modal__button:hover .modal__close {
+        fill: $focus-color;
+    }
+
+    .modal__button:focus .modal__close {
+        fill: $focus-color;
+    }
+
+    .modal__close {
+        background-repeat: no-repeat;
+        background-size: cover;
+        fill: #000;
+
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            fill: $focus-color;
+        }
+
+    }
+
+    .modal__tittle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding-top: 40px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $primary-text-color;
+    }
+
+    .form__field {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .form__input {
+        width: 328px;
+        height: 40px;
+        padding-left: 42px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            border-color: #2196f3;
+        }
+    }
+
+    .form__label {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 4px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+
+        color: #757575;
+    }
+
+    .form__input:hover~.form__icon {
+        fill: $focus-color;
+    }
+
+    .form__input:focus~.form__icon {
+        fill: $focus-color;
+    }
+
+    .form__icon {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+
+        fill: $primary-text-color;
+    }
+
+    .form__textarea {
+
+        resize: none;
+        width: 340px;
+        height: 120px;
+        outline: none;
+        padding: 12px 16px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        cursor: pointer;
+
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+
+        color: rgba(117, 117, 117, 0.5);
+
+        &:hover,
+        &:focus {
+            border-color: $focus-color;
+        }
+    }
+
+    .form {
+        padding: 40px;
+    }
+
+    .form__fakecheckbox {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    .form__checkbox {
+        width: 12px;
+        height: 11px;
+        border: 2px solid $primary-text-color;
+        border-radius: 2px;
+        margin: 0px;
+        padding: 0px;
+        margin-right: 7px;
+        background-image: url(/images/svg/check.svg);
+        background-color: $primary-background-color;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+    .form__fakecheckbox:checked+.form__checkbox {
+        border: 2px solid $focus-color;
+        background-color: $focus-color;
+
+    }
+
+    .form__label--accept {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        width: 370px;
+        height: 14px;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+    }
+
+    .form__link {
+        margin-left: 4px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: $focus-color;
+        text-decoration: underline;
+    }
+
+    .form__field--accept {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .form__submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $focus-color;
+        color: $primary-background-color;
+
+        width: 200px;
+        height: 50px;
+        margin: auto;
+        padding: 0px;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+
+        &:hover,
+        &:focus {
+            color: $focus-color;
+            background-color: $primary-background-color;
+        }
+    }
+}

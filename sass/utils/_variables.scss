@@ -1,0 +1,17 @@
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$primary-background-color: #FFFFFF;
+$secondary-background-color: #F5F4FA;
+$focus-color: #2196F3;
+$footer-color: #2F303A;
+
+*,
+*::before,
+::after {
+    box-sizing: inherit;
+}
+
+.body .modal-open{
+    overflow: hidden;
+
+}

@@ -1,0 +1,38 @@
+@media screen and (min-width: 1200px){
+.header {
+        background-color: $primary-background-color;
+        border-bottom: 1px solid #ECECEC;
+        min-height: 80px;
+        margin: auto;
+        width: 1600px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .header__accent {
+        color: #2196F3;
+    }
+
+    .hat-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+    }
+
+    .menu__button {
+        display: none;
+    }
+
+    .menu-container {
+        display: none;
+    }
+
+    .links{
+        display: none;
+    }
+}

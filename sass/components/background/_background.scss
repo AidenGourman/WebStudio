@@ -1,0 +1,79 @@
+@media screen and (min-width: 1200px) {
+    .background {
+            max-width: 1600px;
+            height: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(../images/images-studia/backgroundimage.jpeg);
+    
+            background-color: #757575;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+        }
+
+        @media (min-device-pixel-ratio: 2),
+           (-webkit-min-device-pixel-ratio: 2),
+           (min-resolution: 192dpi),
+           (min-resolution: 2dppx) {
+        .background {
+            background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(../images/images-studia/backgroundimage@2x.jpeg);
+        }
+        }
+    
+        .hero-container {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+    
+    
+        .background__title {
+            margin-top: 0px;
+            margin-bottom: 30px;
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $primary-background-color;
+        }
+    
+        .background__button {
+            display: block;
+            padding: 10px 20px;
+            margin-left: auto;
+            margin-right: auto;
+    
+            border-radius: 4px;
+            min-width: 200px;
+            text-align: center;
+            border: none;
+    
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.87;
+            letter-spacing: 0.06em;
+            background-color: $focus-color;
+            color: $primary-background-color;
+            font-family: inherit;
+            cursor: pointer;
+    
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+            &:hover,
+            &:focus {
+                background-color: $primary-background-color;
+                color: $focus-color;
+            }
+    
+        }
+}

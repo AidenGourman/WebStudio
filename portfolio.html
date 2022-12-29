@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body class="page">
+    <!--Хедер-->
+<header class="header">
+    <div class="container hat-container">
+        <a class="header__logo" href="./index.html">
+            <span class="header__accent">Web</span>Studio </a>
+        <nav>
+             <button class="menu__button js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40px" height="40px" aria-label="menu switcher">
+                        <use class="icon__menu" href="./images/svg/symbol-defs-1.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <div class="menu__container js-menu-container" id="mobile-menu">
+                    <button class="menu__button js-close-menu" type="button">
+                        <svg width="40px" height="40px" aria-label="menu switcher">
+                            <use class="icon__close" href="./images/svg/symbol-defs-1.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <div class="navigation__menu">
+                        <ul class="navigation">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="./index.html"> Studio </a>
+                            </li>
+                            <li class="navigation__item navigation__item--currentlink">
+                                <a class="navigation__link navigation__link--current" href="./portfolio.html"> Portfolio </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link " href=""> Contacts </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__menu">
+                        <ul class="contacts">
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="tel:+12127724150">
+                                    +1 212-772-4150
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="mailto:info@devstudio.com">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <ul class="links__menu">
+                            <li class="links__item">
+                                <a class="links__link" href="https://www.instagram.com/">Instagram<span class="links__wall">|</span></a>
+                            </li>
+                            <li class="links__item">
+                                <a class="links__link" href="https://twitter.com/">Twitter<span class="links__wall">|</span></a>
+                            </li>
+                            <li class="links__item">
+                                <a class="links__link" href="https://www.facebook.com/">Facebook<span class="links__wall">|</span></a>
+                            </li>
+                            <li class="links__item">
+                                <a class="links__link" href="https://www.linkedin.com/">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <ul class="navigation">
+                <li class="navigation__item">
+                    <a class="navigation__link" href="./index.html"> Studio </a>
+                </li>
+                <li class="navigation__item navigation__item--currentlink">
+                    <a class="navigation__link navigation__link--current" href="./portfolio.html"> Portfolio </a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href=""> Contacts </a>
+                </li>
+            </ul>
+        </nav>
+
+        <ul class="contacts">
+            <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@devstudio.com">
+                    <svg class="contacts__icon" width="16px" height="12px">
+                        <use href="./images/svg/symbol-defs-1.svg#icon-mail-icon"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+            </li>
+            <li class="contacts__item">
+                <a class="contacts__link" href="tel:+12127724150">
+                    <svg class="contacts__icon" width="10px" height="16px">
+                        <use href="./images/svg/symbol-defs-1.svg#icon-smartphone-icon"></use>
+                    </svg>
+                    +1 212-772-4150
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+    <!--Мейн-->
+    <main>       
+     <!--Секция с катринками i Cекция с кнопками-->
+        <div class="container">
+            <section class="section">
+                <h1 hidden> Our works </h1>
+                <ul class="buttons">
+                    <li class="buttons__item">
+                        <button class="buttons__secondary" type="button">All</button>
+                    </li>
+                    <li class="buttons__item">
+                        <button class="buttons__secondary" type="button">Web-sites</button>
+                    </li>
+                    <li class="buttons__item">
+                        <button class="buttons__secondary" type="button">Apps</button>
+                    </li>
+                    <li class="buttons__item">
+                        <button class="buttons__secondary" type="button">Design</button>
+                    </li>
+                    <li class="buttons__item">
+                        <button class="buttons__secondary" type="button">Marketing</button>
+                    </li>
+                </ul>
+                <ul class="example">
+                        <li class="example__item">
+                            <div class="example__div">
+                                <picture>
+                                    <source srcset="./images/images-portfolio/laptopimg.jpeg 1x, ./images/images-portfolio/laptopimg@2x.jpeg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/images-portfolio/laptop-tabletimg.jpeg 1x, ./images/images-portfolio/laptop-tabletimg@2x.jpeg 2x"
+                                        media="(min-width: 767px)">
+                                    <source srcset="./images/images-portfolio/laptop-mobileimg.jpeg 1x, ./images/images-portfolio/laptop-mobileimg@2x.jpeg 2x"
+                                        media="(min-width: 150px)">
+                                    <img class="example__image" src="./images/images-portfolio/laptopimg.jpeg" alt="laptop" />
+                                </picture>
+                                <div class="example__backbox">
+                                    <p class="example__text">The technocrat is the modern site for the coronavirus. Companies use this platform
+                                        for digital espionage and attacks on
+                                        protected competitor servers.</p>
+                                </div>
+                            </div>
+                            <h2 class="example__title">Technoduck</h2>
+                            <p class="example__description">Web-site</p>
+                        </li>
+                        <li class="example__item">
+                            <div class="example__div">
+                                <picture>
+                                    <source srcset="./images/images-portfolio/baseballimg.jpeg 1x, ./images/images-portfolio/baseballimg@2x.jpeg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/images-portfolio/baseball-tabletimg.jpeg 1x, ./images/images-portfolio/baseball-tabletimg@2x.jpeg 2x"
+                                        media="(min-width: 767px)">
+                                    <source
+                                        srcset="./images/images-portfolio/baseball-mobileimg.jpeg 1x, ./images/images-portfolio/baseball-mobileimg@2x.jpeg 2x"
+                                        media="(min-width: 150px)">
+                                    <img class="example__image" src="./images/images-portfolio/baseballimg.jpeg" alt=" two man playing baseball" />
+                                </picture>
+                                <div class="example__backbox">
+                                    <p class="example__text">The technocrat is the modern site for the coronavirus. Companies use this platform for digital espionage and attacks on protected competitor servers.</p>
+                                </div>
+                            </div>
+                            <h2 class="example__title">Poster New Orlean vs Golden Star</h2>
+                            <p class="example__description">Design</p>
+                        </li>                  
+                        <li class="example__item">
+                            <div class="example__div">
+                                <picture>
+                                    <source srcset="./images/images-portfolio/seafoodimg.jpeg 1x, ./images/images-portfolio/seafoodimg@2x.jpeg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/images-portfolio/seafood-tabletimg.jpeg 1x, ./images/images-portfolio/seafood-tabletimg@2x.jpeg 2x"
+                                        media="(min-width: 767px)">
+                                    <source
+                                        srcset="./images/images-portfolio/seafood-mobileimg.jpeg 1x, ./images/images-portfolio/seafood-mobileimg@2x.jpeg 2x"
+                                        media="(min-width: 150px)">
+                                    <img class="example__image" src="./images/images-portfolio/seafoodimg.jpeg" alt=" logo fish restaurant" />
+                                </picture>
+                                <div class="example__backbox">
+                                    <p class="example__text">The technocrat is the modern site for the coronavirus. Companies use this platform for digital espionage and attacks on protected competitor servers.</p>
+                                </div>
+                            </div>
+                            <h2 class="example__title">Seafood Restaurant</h2>
+                            <p class="example__description">Apps</p>
+                        </li>
+                        <li class="example__item">
+                            <div class="example__div">
+                                <picture>
+                                    <source srcset="./images/images-portfolio/headphonesimg.jpeg 1x, ./images/images-portfolio/headphonesimg@2x.jpeg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/images-portfolio/headphones-tabletimg.jpeg 1x, ./images/images-portfolio/headphones-tabletimg@2x.jpeg 2x"
+                                        media="(min-width: 767px)">
+                                    <source
+                                        srcset="./images/images-portfolio/headphones-mobileimg.jpeg 1x, ./images/images-portfolio/headphones-mobileimg@2x.jpeg 2x"
+                                        media="(min-width: 150px)">
+                                    <img class="example__image" src="./images/images-portfolio/headphonesimg.jpeg" alt=" headphones" />
+                                </picture>
+                                <div class="example__backbox">
+                                    <p class="example__text">The technocrat is the modern site for the coronavirus. Companies use this platform for digital espionage and attacks on protected competitor servers.</p>
+                                </div>
+                            </div>
+                            <h2 class="example__title">Project Prime</h2>
+                            <p class="example__description">Marketing</p>
+                        </li>                  
+                        <li class="example__item">
+                        <div class="example__div">
+                            <picture>
+                                <source srcset="./images/images-portfolio/twoboximg.jpeg 1x, ./images/images-portfolio/twoboximg@2x.jpeg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/images-portfolio/twobox-tabletimg.jpeg 1x, ./images/images-portfolio/twobox-tabletimg@2x.jpeg 2x"
+                                    media="(min-width: 767px)">
+                                <source
+                                    srcset="./images/images-portfolio/twobox-mobileimg.jpeg 1x, ./images/images-portfolio/twobox-mobileimg@2x.jpeg 2x"
+                                    media="(min-width: 150px)">
+                                <img class="example__image" src="./images/images-portfolio/twoboximg.jpeg" alt=" two carton box" />
+                            </picture>
+                            <div class="example__backbox">
+                                <p class="example__text">The technocrat is the modern site for the coronavirus. Companies use this platform for digital espionage and attacks on protected competitor servers.</p>
+                            </div>
+                        </div>
+                        <h2 class="example__title">Project Boxes</h2>
+                        <p class="example__description">Apps</p>
+                        </li>                   
+                        <li class="example__item">
+                            <div class="example__div">
+                                <picture>
+                                    <source srcset="./images/images-portfolio/displayimg.jpeg 1x, ./images/images-portfolio/displayimg@2x.jpeg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/images-portfolio/display-tabletimg.jpeg 1x, ./images/images-portfolio/display-tabletimg@2x.jpeg 2x"
+                                        media="(min-width: 767px)">
+                                    <source
+                                        srcset="./images/images-portfolio/display-mobileimg.jpeg 1x, ./images/images-portfolio/display-mobileimg@2x.jpeg 2x"
+                                        media="(min-width: 150px)">
+                                    <img class="example__image" src="./images/images-portfolio/displayimg.jpeg" alt="display" />
+                                </picture>
+                                <div class="example__backbox">
+                                    <p class="example__text">The technocrat is the modern site for the coronavirus. Companies use this platform for digital espionage and attacks on protected competitor servers.</p>
+                                </div>
+                            </div>
+                            <h2 class="example__title">Inspiration has no Borders</h2>
+                            <p class="example__description">Web-site</p>
+                        </li>                   
+                        <li class="example__item">
+                            <div class="example__div">
+                                <picture>
+                                    <source srcset="./images/images-portfolio/bookimg.jpeg 1x, ./images/images-portfolio/bookimg@2x.jpeg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/images-portfolio/book-tabletimg.jpeg 1x, ./images/images-portfolio/book-tabletimg@2x.jpeg 2x"
+                                        media="(min-width: 767px)">
+                                    <source
+                                        srcset="./images/images-portfolio/book-mobileimg.jpeg 1x, ./images/images-portfolio/book-mobileimg@2x.jpeg 2x"
+                                        media="(min-width: 150px)">
+                                    <img class="example__image" src="./images/images-portfolio/bookimg.jpeg" alt=" opened book" />
+                                </picture>
+                                <div class="example__backbox">
+                                    <p class="example__text">The technocrat is the modern site for the coronavirus. Companies use this platform for digital espionage and attacks on protected competitor servers.</p>
+                                </div>
+                            </div>
+                            <h2 class="example__title">Limited Edition</h2>
+                            <p class="example__description">Design</p>
+                        </li>                    
+                        <li class="example__item">
+                            <div class="example__div">
+                                <picture>
+                                    <source srcset="./images/images-portfolio/labelimg.jpeg 1x, ./images/images-portfolio/labelimg@2x.jpeg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/images-portfolio/label-tabletimg.jpeg 1x, ./images/images-portfolio/label-tabletimg@2x.jpeg 2x"
+                                        media="(min-width: 767px)">
+                                    <source
+                                        srcset="./images/images-portfolio/label-mobileimg.jpeg 1x, ./images/images-portfolio/label-mobileimg@2x.jpeg 2x"
+                                        media="(min-width: 150px)">
+                                    <img class="example__image" src="./images/images-portfolio/labelimg.jpeg" alt=" label with letters" />
+                                </picture>
+                                <div class="example__backbox">
+                                    <p class="example__text">The technocrat is the modern site for the coronavirus. Companies use this platform for digital espionage and attacks on protected competitor servers.</p>
+                                </div>
+                            </div>
+                            <h2 class="example__title">Project LAB</h2>
+                            <p class="example__description">Marketing</p>
+                        </li>                   
+                        <li class="example__item">
+                           <div class="example__div">
+                            <picture>
+                                <source srcset="./images/images-portfolio/laptopworkimg.jpeg 1x, ./images/images-portfolio/laptopworkimg@2x.jpeg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/images-portfolio/laptopwork-tabletimg.jpeg 1x, ./images/images-portfolio/laptopwork-tabletimg@2x.jpeg 2x"
+                                    media="(min-width: 767px)">
+                                <source
+                                    srcset="./images/images-portfolio/laptopwork-mobileimg.jpeg 1x, ./images/images-portfolio/laptopwork-mobileimg@2x.jpeg 2x"
+                                    media="(min-width: 150px)">
+                                <img class="example__image" src="./images/images-portfolio/laptopworkimg.jpeg" alt=" man working on laptop" />
+                            </picture>
+                            <div class="example__backbox">
+                                <p class="example__text">The technocrat is the modern site for the coronavirus. Companies use this platform for digital espionage and attacks on protected competitor servers.</p>
+                            </div>
+                           </div>
+                            <h2 class="example__title">Growing Business</h2>
+                            <p class="example__description">Apps</p>
+                        </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <!--Футер и адресс-->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__container">
+            <div class="footer-tablet">
+            <div class="footer__info">
+                <a class="footer__logo" href="index.html" target="_self"> <span class="accent">Web</span><span
+                        class="footer__second footer__second--white">Studio</span>
+                </a>
+                <address>
+                    <ul class="address">
+                        <li class="address__item">
+                            <a class="address__link"
+                                href="https://www.google.com/maps/place/695+Park+Ave,+New+York,+NY+10065,+%D0%A1%D0%A8%D0%90/@40.7688994,-73.9672143,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258ebe8836e8f:0xa007c44e7c4aa0eb!8m2!3d40.7688994!4d-73.9650256"
+                                target="_blank">695 Park Ave, NY 10065, USA</a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__info" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__info" href="tel:+12127724150">+1 212-772-4150</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="join">
+                <h3 class="join__title">JOIN TO US!</h3>
+                <ul class="network">
+                    <li class="network__item">
+                        <a class="network__link network__link--gray" href="https://www.instagram.com/" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="network__icon network__icon--footer" width="20px" height="20px">
+                                <use href="./images/svg/symbol-defs-1.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="network__item">
+                        <a class="network__link network__link--gray" href="https://twitter.com/" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="network__icon network__icon--footer" width="20px" height="20px">
+                                <use href="./images/svg/symbol-defs-1.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="network__item">
+                        <a class="network__link network__link--gray" href="https://www.facebook.com/" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="network__icon network__icon--footer" width="20px" height="20px">
+                                <use href="./images/svg/symbol-defs-1.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="network__item">
+                        <a class="network__link network__link--gray" href="https://www.linkedin.com/" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="network__icon network__icon--footer" width="20px" height="20px">
+                                <use href="./images/svg/symbol-defs-1.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <form class="footerform">
+                <h3 class="form__title">SUBSCRIBE TO OUR NEWSLETTERS</h3>
+                <div class="form__container">
+                    <input class="form__input--gray" type="text" name="input-name" placeholder="E-mail">
+                    <button class="form__button" type="submit">Subscribe
+                        <svg class="form__telegram form__telegram--gray" width="24px" height="24px">
+                            <use href="./images/svg/symbol-defs-1.svg#icon-telegram"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</footer>
+<script src="./js/menu.js"></script>
+</body>
+</html>
